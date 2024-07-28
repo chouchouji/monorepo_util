@@ -6,7 +6,8 @@
     "preinstall": "npx only-allow pnpm",
     "clean": "rimraf node_modules packages/*/node_modules",
     "bootstrap": "pnpm install && node scripts/bootstrap.mjs",
-    "release": "node scripts/release.mjs"
+    "release": "node scripts/release.mjs",
+    "build": "pnpm -r --filter=@monorepo_util/* build"
   },
   "keywords": [],
   "author": "chouchouji",
