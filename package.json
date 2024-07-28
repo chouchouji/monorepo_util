@@ -13,6 +13,10 @@
   "keywords": [],
   "author": "chouchouji",
   "license": "MIT",
+  "packageManager": "pnpm@9.1.1",
+  "engines": {
+    "pnpm": ">=9.0"
+  },
   "devDependencies": {
     "@varlet/release": "^0.2.11",
     "eslint": "^9.8.0",
