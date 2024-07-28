@@ -1,0 +1,35 @@
+{
+  "name": "@monorepo_util/hooks",
+  "version": "0.0.0",
+  "description": "hooks utils of monorepo_util",
+  "type": "module",
+  "module": "lib/index.js",
+  "main": "lib/index.cjs",
+  "types": "lib/index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "require": "./lib/index.cjs",
+      "types": "./lib/index.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "tsup src/index.ts --format esm --out-dir=lib --watch --dts",
+    "build": "tsup src/index.ts --format esm,cjs --out-dir=lib --dts --clean"
+  },
+  "files": [
+    "lib",
+    "tsconfig.json"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsup": "^8.2.3"
+  },
+  "dependencies": {
+    "@monorepo_util/shared": "workspace:*",
+    "vue": "^3.4.34"
+  }
+}

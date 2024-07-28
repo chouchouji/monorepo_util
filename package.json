@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "version": "0.0.0",
+  "description": "monorepo utils",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "clean": "rimraf node_modules packages/*/node_modules",
+    "bootstrap": "pnpm install && node scripts/bootstrap.mjs",
+    "release": "node scripts/release.mjs"
+  },
+  "keywords": [],
+  "author": "chouchouji",
+  "license": "MIT",
+  "devDependencies": {
+    "@varlet/release": "^0.2.11",
+    "eslint": "^9.8.0",
+    "execa": "^9.3.0",
+    "nanospinner": "^1.1.0",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.5.4"
+  }
+}

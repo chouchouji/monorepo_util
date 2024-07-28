@@ -1,0 +1,15 @@
+node_modules
+
+.idea
+.vscode
+.history
+*.log
+.DS_Store
+*.vsix
+*.draft.md
+package-lock.json
+
+packages/shared/lib
+packages/use/lib
+
+.eslintcache
