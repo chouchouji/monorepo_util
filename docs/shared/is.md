@@ -61,3 +61,32 @@ isNumber('') // false
 
 isNumber(1) // true
 ```
+
+## isEmpty
+
+判断数据是否为 `undefined`、`null`、`''`或`[]`
+
+### 代码
+
+```ts
+export const isEmpty = (val: unknown) =>
+    val === undefined || val === null || val === '' || (isArray(val) && !val.length)
+```
+
+### 使用
+
+```ts
+import { isEmpty } from '@monorepo_util/shared'
+
+isEmpty(null) // true
+
+isEmpty(undefined) // true
+
+isEmpty('') // true
+
+isEmpty([]) // true
+
+isEmpty(0) // false
+
+isEmpty(false) // false
+```
