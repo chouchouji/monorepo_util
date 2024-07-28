@@ -10,6 +10,9 @@ node_modules
 package-lock.json
 
 packages/shared/lib
-packages/use/lib
+packages/hooks/lib
+
+docs/.vitepress/cache
+docs/.vitepress/dist
 
 .eslintcache
