@@ -1,4 +1,13 @@
-## 0.0.1 (2024-07-28)
+## [0.0.2](https://github.com/chouchouji/monorepo_util/compare/v0.0.1...v0.0.2) (2024-07-28)
+
+
+### Features
+
+* **shared:** support isEmpty ([8eecb3c](https://github.com/chouchouji/monorepo_util/commit/8eecb3c95542c72cbbf826050d79fbcf7964fe68))
+
+
+
+## [0.0.1](https://github.com/chouchouji/monorepo_util/compare/470b4346a969eec90e833d2e7923b7b051525f62...v0.0.1) (2024-07-28)
 
 
 ### Bug Fixes
