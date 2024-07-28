@@ -23,4 +23,12 @@ declare function useTouch(): {
     endTouch: () => void;
 };
 
-export { type TouchDirection, useTouch };
+declare function useCounter(): {
+    count: vue.Ref<number>;
+    doubleCount: vue.ComputedRef<number>;
+    isNumberCount: vue.ComputedRef<boolean>;
+    decrement: (step?: number) => void;
+    increment: (step?: number) => void;
+};
+
+export { type TouchDirection, useCounter, useTouch };

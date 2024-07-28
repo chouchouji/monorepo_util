@@ -100,6 +100,33 @@ function useTouch() {
     endTouch
   };
 }
+
+// src/useCounter.ts
+import { ref as ref2, computed } from "vue";
+import { isNumber } from "@monorepo_util/shared";
+function useCounter() {
+  const count = ref2(0);
+  const doubleCount = computed(() => {
+    return count.value * 2;
+  });
+  const isNumberCount = computed(() => {
+    return isNumber(count.value);
+  });
+  function decrement(step = 1) {
+    count.value -= step;
+  }
+  function increment(step = 1) {
+    count.value += step;
+  }
+  return {
+    count,
+    doubleCount,
+    isNumberCount,
+    decrement,
+    increment
+  };
+}
 export {
+  useCounter,
   useTouch
 };

@@ -20,6 +20,7 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var src_exports = {};
 __export(src_exports, {
+  useCounter: () => useCounter,
   useTouch: () => useTouch
 });
 module.exports = __toCommonJS(src_exports);
@@ -126,7 +127,34 @@ function useTouch() {
     endTouch
   };
 }
+
+// src/useCounter.ts
+var import_vue2 = require("vue");
+var import_shared = require("@monorepo_util/shared");
+function useCounter() {
+  const count = (0, import_vue2.ref)(0);
+  const doubleCount = (0, import_vue2.computed)(() => {
+    return count.value * 2;
+  });
+  const isNumberCount = (0, import_vue2.computed)(() => {
+    return (0, import_shared.isNumber)(count.value);
+  });
+  function decrement(step = 1) {
+    count.value -= step;
+  }
+  function increment(step = 1) {
+    count.value += step;
+  }
+  return {
+    count,
+    doubleCount,
+    isNumberCount,
+    decrement,
+    increment
+  };
+}
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
+  useCounter,
   useTouch
 });
