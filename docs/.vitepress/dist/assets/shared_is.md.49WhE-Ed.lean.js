@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a2 as h}from"./chunks/framework.Rf9G6_fC.js";const y=JSON.parse('{"title":"类型","description":"","frontmatter":{},"headers":[],"relativePath":"shared/is.md","filePath":"shared/is.md"}'),n={name:"shared/is.md"},t=h("",25),l=[t];function k(p,e,r,d,g,E){return a(),i("div",null,l)}const F=s(n,[["render",k]]);export{y as __pageData,F as default};
