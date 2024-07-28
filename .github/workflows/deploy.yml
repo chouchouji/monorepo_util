@@ -30,24 +30,22 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # 如果未启用 lastUpdated，则不需要
 
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
-          cache: 'pnpm'
+          node-version: 20
+          cache: pnpm
        
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - name: Install dependencies
-        run: pnpm install # 或 pnpm install / yarn install / bun install
+        run: pnpm install --no-frozen-lockfile
 
       - name: Build with VitePress
-        run: pnpm run docs:build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
-        
+        run: pnpm docs:build
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
