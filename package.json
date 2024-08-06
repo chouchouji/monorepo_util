@@ -8,7 +8,8 @@
     "bootstrap": "pnpm install && node scripts/bootstrap.mjs",
     "release": "node scripts/release.mjs",
     "build": "pnpm -r --filter=@monorepo_util/* build",
-    "docs:build": "pnpm --dir ./docs build:docs"
+    "docs:build": "pnpm --dir ./docs build:docs",
+    "test:coverage": "pnpm -r --filter=@monorepo_util/shared test:coverage"
   },
   "keywords": [],
   "author": "chouchouji",
