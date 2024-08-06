@@ -16,7 +16,9 @@
   },
   "scripts": {
     "dev": "tsup src/index.ts --format esm --out-dir=lib --watch --dts",
-    "build": "tsup src/index.ts --format esm,cjs --out-dir=lib --dts --clean"
+    "build": "tsup src/index.ts --format esm,cjs --out-dir=lib --dts --clean",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage"
   },
   "keywords": [],
   "author": "chouchouji",
@@ -26,6 +28,8 @@
     "tsconfig.json"
   ],
   "devDependencies": {
-    "tsup": "^8.2.3"
+    "@vitest/coverage-istanbul": "^2.0.5",
+    "tsup": "^8.2.3",
+    "vitest": "^2.0.5"
   }
 }

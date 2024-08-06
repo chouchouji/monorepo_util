@@ -10,7 +10,10 @@ node_modules
 package-lock.json
 
 packages/shared/lib
+packages/shared/coverage
+
 packages/hooks/lib
+packages/hooks/coverage
 
 docs/.vitepress/cache
 docs/.vitepress/dist
