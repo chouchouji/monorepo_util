@@ -38,6 +38,10 @@ It is used to build docs site. You can find all methods and compsables in the we
 
 It is a tool used for publishing all packages, generating changelogs. [More details](https://github.com/varletjs/varlet-release)
 
-# End
+# Feedback
 
 If you have some problems, please contact me by mail(**1305974212@qq.com**). 
+
+# License
+
+[MIT](LICENSE)

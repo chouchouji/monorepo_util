@@ -12,8 +12,12 @@
     "test:coverage": "pnpm -r --filter=@monorepo_util/shared test:coverage",
     "format": "prettier --write ."
   },
-  "keywords": [],
-  "author": "chouchouji",
+  "keywords": [
+    "monorepo",
+    "util",
+    "site"
+  ],
+  "author": "chouchouji <1305974212@qq.com>",
   "license": "MIT",
   "packageManager": "pnpm@9.1.1",
   "engines": {
