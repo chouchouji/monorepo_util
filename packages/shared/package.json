@@ -1,6 +1,6 @@
 {
   "name": "@monorepo_util/shared",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "shared utils of monorepo_util",
   "type": "module",
   "module": "lib/index.js",
