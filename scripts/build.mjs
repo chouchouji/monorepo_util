@@ -22,6 +22,8 @@ export async function runTask(taskName, task) {
 
 export const buildShared = createTask(resolve(CWD, './packages/shared'))
 
+export const buildUI = createTask(resolve(CWD, './packages/ui'))
+
 export const buildHooks = createTask(resolve(CWD, './packages/hooks'))
 
 export const buildDocs = createTask(resolve(CWD, './docs'), 'build:docs')
@@ -31,6 +33,7 @@ export async function runTaskQueue() {
 
   await runTask('shared', buildShared)
   await runTask('hooks', buildHooks)
+  await runTask('ui', buildDocs)
   await runTask('docs', buildDocs)
 
   console.info(`All tasks built in ${Math.ceil(performance.now() - start)} ms`)
