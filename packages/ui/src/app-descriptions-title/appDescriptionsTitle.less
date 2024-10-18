@@ -1,0 +1,71 @@
+.app-descriptions-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .app-descriptions-title--flex {
+    display: flex;
+    align-items: center;
+  }
+
+  .app-descriptions-title--main {
+    display: flex;
+    align-items: center;
+
+    margin: 0;
+    margin-right: 8px;
+
+    color: #262626;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+
+  .app-descriptions-title--small {
+    font-size: 14px;
+  }
+
+  .app-descriptions-title--large {
+    margin-right: 12px;
+
+    font-size: 20px;
+  }
+
+  .app-descriptions-badge--square {
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      margin-right: 4px;
+      border-radius: 1px;
+
+      background: #1890ff;
+    }
+  }
+
+  .app-descriptions-badge--column {
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 22px;
+      margin-right: 4px;
+
+      background: #1890ff;
+    }
+  }
+
+  .app-descriptions-badge--circle {
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      margin-right: 4px;
+      border-radius: 100%;
+
+      background: #1890ff;
+    }
+  }
+}

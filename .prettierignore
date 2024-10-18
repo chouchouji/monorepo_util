@@ -1,6 +1,9 @@
 packages/shared/lib/**
 packages/hooks/lib/**
 
+packages/ui/es/** 
+packages/ui/lib/** 
+
 **/package.json
 *.md
 .github/**

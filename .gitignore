@@ -17,6 +17,9 @@ packages/hooks/lib
 packages/hooks/__test__
 packages/hooks/coverage
 
+packages/ui/es
+packages/ui/lib
+
 docs/.vitepress/cache
 docs/.vitepress/dist
 
