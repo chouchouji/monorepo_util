@@ -69,6 +69,12 @@ importers:
       '@arco-design/web-vue':
         specifier: ^2.56.2
         version: 2.56.2(vue@3.4.34(typescript@5.5.4))
+      '@monorepo_util/hooks':
+        specifier: workspace:*
+        version: link:../hooks
+      '@monorepo_util/shared':
+        specifier: workspace:*
+        version: link:../shared
       ant-design-vue:
         specifier: ^4.2.5
         version: 4.2.5(vue@3.4.34(typescript@5.5.4))

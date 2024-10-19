@@ -12,7 +12,14 @@ export default defineConfig({
     },
     cssCodeSplit: true,
     rollupOptions: {
-      external: ['vue', 'ant-design-vue', '@arco-design/web-vue/es/icon', 'clipboard'],
+      external: [
+        'vue',
+        'ant-design-vue',
+        '@arco-design/web-vue/es/icon',
+        'clipboard',
+        '@monorepo_util/hooks',
+        '@monorepo_util/shared',
+      ],
       output: [
         {
           format: 'es',

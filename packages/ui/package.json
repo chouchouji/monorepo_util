@@ -21,6 +21,8 @@
         "@arco-design/web-vue": "^2.56.2",
         "ant-design-vue": "^4.2.5",
         "clipboard": "^2.0.11",
-        "vue": "^3.4.34"
+        "vue": "^3.4.34",
+        "@monorepo_util/shared": "workspace:*",
+        "@monorepo_util/hooks": "workspace:*"
     }
 }
