@@ -10,11 +10,9 @@ node_modules
 package-lock.json
 
 packages/shared/lib
-packages/shared/__test__
 packages/shared/coverage
 
 packages/hooks/lib
-packages/hooks/__test__
 packages/hooks/coverage
 
 packages/ui/es
