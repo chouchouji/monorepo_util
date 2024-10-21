@@ -1,10 +1,26 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
+import fs from 'fs'
 import { cwd } from 'process'
+import { fileURLToPath, URL } from 'node:url'
 import vue from '@vitejs/plugin-vue'
 
+function toPath(path) {
+  return fileURLToPath(new URL(path, import.meta.url))
+}
+
+function copyTypes() {
+  return {
+    name: 'copy-types',
+
+    closeBundle() {
+      fs.copyFileSync(toPath('./types/index.d.ts'), toPath('./es/index.d.ts'))
+    },
+  }
+}
+
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [vue(), copyTypes()],
   build: {
     minify: false,
     lib: {
