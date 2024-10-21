@@ -24,7 +24,14 @@ export default defineConfig({
   build: {
     minify: false,
     lib: {
-      entry: resolve(cwd(), './src/index.js'),
+      entry: [
+        resolve(cwd(), './src/index.js'),
+        resolve(cwd(), './src/app-descriptions-title/index.js'),
+        resolve(cwd(), './src/app-descriptions-title/style/index.less'),
+        resolve(cwd(), './src/app-descriptions-title/AppDescriptionsTitle.vue'),
+        resolve(cwd(), './src/app-select-user-single-select/index.js'),
+        resolve(cwd(), './src/app-select-user-single-select/AppSelectUserSingleSelect.vue'),
+      ],
     },
     cssCodeSplit: true,
     rollupOptions: {

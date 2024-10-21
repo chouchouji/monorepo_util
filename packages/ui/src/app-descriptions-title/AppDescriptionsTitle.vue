@@ -60,5 +60,5 @@ const filteredTitleSize = computed(() => ({
 </template>
 
 <style lang="less" scoped>
-@import './appDescriptionsTitle.less';
+@import './style/index.less';
 </style>
