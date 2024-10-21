@@ -14,7 +14,7 @@ function copyTypes() {
     name: 'copy-types',
 
     closeBundle() {
-      fs.copyFileSync(toPath('./types/index.d.ts'), toPath('./es/index.d.ts'))
+      fs.writeFileSync(toPath('./es/index.d.ts'), `export * from '../types'`)
     },
   }
 }
