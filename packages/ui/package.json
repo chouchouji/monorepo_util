@@ -4,7 +4,7 @@
   "description": "ui components of monorepo_util",
   "main": "lib/businessUI.cjs.js",
   "module": "es/index.mjs",
-  "types": "es/index.d.ts",
+  "types": "types/index.d.ts",
   "files": [
     "lib",
     "es",
