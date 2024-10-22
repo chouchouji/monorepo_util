@@ -4,6 +4,7 @@ import fs from 'fs'
 import { cwd } from 'process'
 import { fileURLToPath, URL } from 'node:url'
 import vue from '@vitejs/plugin-vue'
+import { globSync } from 'glob'
 
 function toPath(path) {
   return fileURLToPath(new URL(path, import.meta.url))
@@ -19,19 +20,14 @@ function copyTypes() {
   }
 }
 
+const files = globSync('./src/**', { nodir: true })
+
 export default defineConfig({
   plugins: [vue(), copyTypes()],
   build: {
     minify: false,
     lib: {
-      entry: [
-        resolve(cwd(), './src/index.js'),
-        resolve(cwd(), './src/app-descriptions-title/index.js'),
-        resolve(cwd(), './src/app-descriptions-title/style/index.less'),
-        resolve(cwd(), './src/app-descriptions-title/AppDescriptionsTitle.vue'),
-        resolve(cwd(), './src/app-select-user-single-select/index.js'),
-        resolve(cwd(), './src/app-select-user-single-select/AppSelectUserSingleSelect.vue'),
-      ],
+      entry: files
     },
     cssCodeSplit: true,
     rollupOptions: {
@@ -46,15 +42,9 @@ export default defineConfig({
       output: [
         {
           format: 'es',
-          entryFileNames: '[name].mjs',
+          entryFileNames: (chunkinfo) => `${chunkinfo.name.replace('.vue', '')}.mjs`,
           preserveModules: true,
           dir: resolve(cwd(), 'es'),
-        },
-        {
-          format: 'cjs',
-          entryFileNames: 'businessUI.cjs.js',
-          exports: 'named',
-          dir: resolve(cwd(), 'lib'),
         },
       ],
     },
