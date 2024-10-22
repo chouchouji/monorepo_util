@@ -1,7 +1,7 @@
 <script setup>
 import Clipboard from 'clipboard'
 
-import { IconCopy } from '@arco-design/web-vue/es/icon'
+import { CopyOutlined } from '@ant-design/icons-vue'
 
 import { message as AMessage } from 'ant-design-vue'
 import 'ant-design-vue/es/message/style/index.js'
@@ -45,7 +45,7 @@ function clickButton() {
 </script>
 
 <template>
-  <IconCopy class="app-button-copy" @click="clickButton" />
+  <CopyOutlined class="app-button-copy" @click="clickButton" />
 </template>
 
 <style lang="less" scoped>

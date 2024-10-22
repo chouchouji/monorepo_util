@@ -50,7 +50,7 @@ export default defineConfig({
       external: [
         'vue',
         'ant-design-vue',
-        '@arco-design/web-vue/es/icon',
+        '@ant-design/icons-vue',
         'clipboard',
         '@monorepo_util/hooks',
         '@monorepo_util/shared',
@@ -58,7 +58,7 @@ export default defineConfig({
       output: [
         {
           format: 'es',
-          entryFileNames: (chunkinfo) => `${chunkinfo.name.replace('.vue', '')}.mjs`,
+          entryFileNames: (chunkInfo) => `${chunkInfo.name.replace('.vue', '')}.mjs`,
           preserveModules: true,
           dir: resolve(cwd(), 'es'),
         },

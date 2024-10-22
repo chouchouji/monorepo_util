@@ -16,16 +16,16 @@
   "devDependencies": {
     "@types/node": "^22.7.6",
     "@vitejs/plugin-vue": "^5.1.4",
+    "glob": "11.0.0",
     "less": "^4.2.0",
-    "vite": "^5.4.9",
-    "glob": "11.0.0"
+    "vite": "^5.4.9"
   },
   "dependencies": {
-    "@arco-design/web-vue": "^2.56.2",
+    "@ant-design/icons-vue": "^7.0.1",
+    "@monorepo_util/hooks": "workspace:*",
+    "@monorepo_util/shared": "workspace:*",
     "ant-design-vue": "^4.2.5",
     "clipboard": "^2.0.11",
-    "vue": "^3.4.34",
-    "@monorepo_util/shared": "workspace:*",
-    "@monorepo_util/hooks": "workspace:*"
+    "vue": "^3.4.34"
   }
 }
