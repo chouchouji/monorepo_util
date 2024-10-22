@@ -4,6 +4,7 @@
   "description": "monorepo utils",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
+    "postinstall": "simple-git-hooks",
     "clean": "rimraf node_modules packages/*/node_modules docs/*/node_modules",
     "bootstrap": "pnpm install && node scripts/bootstrap.mjs",
     "release": "node scripts/release.mjs",
@@ -17,6 +18,12 @@
     "util",
     "site"
   ],
+  "simple-git-hooks": {
+    "pre-commit": "pnpm exec nano-staged --allow-empty"
+  },
+  "nano-staged": {
+    "**.{js,ts,less,vue}": "prettier --write"
+  },
   "author": "chouchouji <1305974212@qq.com>",
   "license": "MIT",
   "packageManager": "pnpm@9.1.1",
@@ -27,9 +34,11 @@
     "@varlet/release": "^0.2.11",
     "eslint": "^9.8.0",
     "execa": "^9.3.0",
+    "nano-staged": "^0.8.0",
     "nanospinner": "^1.1.0",
     "prettier": "^3.3.3",
     "rimraf": "^6.0.1",
+    "simple-git-hooks": "^2.11.1",
     "typescript": "^5.5.4",
     "vite": "^5.3.5"
   }
