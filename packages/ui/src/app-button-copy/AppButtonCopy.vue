@@ -49,5 +49,5 @@ function clickButton() {
 </template>
 
 <style lang="less" scoped>
-@import './appButtonCopy.less';
+@import './style/index.less';
 </style>
