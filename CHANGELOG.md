@@ -1,3 +1,7 @@
+## [0.0.5](https://github.com/chouchouji/monorepo_util/compare/v0.0.4...v0.0.5) (2024-10-23)
+
+
+
 ## [0.0.4](https://github.com/chouchouji/monorepo_util/compare/v0.0.3...v0.0.4) (2024-10-19)
 
 
