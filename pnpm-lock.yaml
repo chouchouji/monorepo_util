@@ -97,6 +97,9 @@ importers:
       '@vitejs/plugin-vue':
         specifier: ^5.1.4
         version: 5.1.4(vite@5.4.9(@types/node@22.7.6)(less@4.2.0))(vue@3.4.34(typescript@5.5.4))
+      dayjs:
+        specifier: ^1.11.13
+        version: 1.11.13
       glob:
         specifier: 11.0.0
         version: 11.0.0
