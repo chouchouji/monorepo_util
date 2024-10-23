@@ -80,7 +80,7 @@ function formatChunk() {
         const isLastComponent = index === indexMjsFileCount - 1
 
         return pre + `  ${componentName}.install && app.use(${componentName})${isLastComponent ? '\n}' : '\n'}`
-      }, `\n\nfunction install(app) {\n`)
+      }, `\nfunction install(app) {\n`)
 
       const exportAll = indexMjsFilePaths.reduce((pre, file, index) => {
         const [_format, folder] = file.split('/')

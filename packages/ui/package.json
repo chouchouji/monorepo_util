@@ -2,11 +2,9 @@
   "name": "@monorepo_util/ui",
   "version": "0.0.5",
   "description": "ui components of monorepo_util",
-  "main": "lib/businessUI.cjs.js",
   "module": "es/index.mjs",
   "types": "types/index.d.ts",
   "files": [
-    "lib",
     "es",
     "types"
   ],
