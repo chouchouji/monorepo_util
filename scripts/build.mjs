@@ -1,11 +1,11 @@
-import { execa } from 'execa'
+import { x } from 'tinyexec'
 import { createSpinner } from 'nanospinner'
 import { resolve } from 'path'
 
 const CWD = process.cwd()
 
 export function createTask(cwd, command = 'build') {
-  return () => execa('pnpm', [command], { cwd })
+  return () => x('pnpm', [command], { cwd })
 }
 
 export async function runTask(taskName, task) {
@@ -26,15 +26,12 @@ export const buildUI = createTask(resolve(CWD, './packages/ui'))
 
 export const buildHooks = createTask(resolve(CWD, './packages/hooks'))
 
-// export const buildDocs = createTask(resolve(CWD, './docs'), 'build:docs')
-
 export async function runTaskQueue() {
   const start = performance.now()
 
   await runTask('shared', buildShared)
   await runTask('hooks', buildHooks)
   await runTask('ui', buildUI)
-  // await runTask('docs', buildDocs)
 
   console.info(`All tasks built in ${Math.ceil(performance.now() - start)} ms`)
 }
