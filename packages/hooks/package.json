@@ -1,6 +1,6 @@
 {
   "name": "@monorepo_util/hooks",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "hooks utils of monorepo_util",
   "type": "module",
   "module": "lib/index.js",

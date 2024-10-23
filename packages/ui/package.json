@@ -1,6 +1,6 @@
 {
   "name": "@monorepo_util/ui",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "ui components of monorepo_util",
   "module": "es/index.mjs",
   "types": "types/index.d.ts",
