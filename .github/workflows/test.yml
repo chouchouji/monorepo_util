@@ -3,7 +3,7 @@ name: Run test cases
 on: [push, pull_request]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -12,10 +12,10 @@ jobs:
       - name: Install pnpm
         run: corepack enable
 
-      - name: Setup node
+      - name: Setup node version to 18
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 18
           cache: pnpm
        
       - name: Setup Pages
