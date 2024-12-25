@@ -22,5 +22,5 @@ export default defineConfig({
     config(md) {
       md.use(vitepressDemoPlugin)
     },
-  },
+  }
 })
