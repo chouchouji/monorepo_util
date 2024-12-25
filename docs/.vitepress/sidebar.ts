@@ -18,6 +18,10 @@ const sidebar = [
     text: 'Hooks',
     items: [{ text: '计数', link: '/hooks/use-counter' }],
   },
+  {
+    text: 'UI',
+    items: [{ text: '复制按钮', link: '/ui/app-button-copy' }],
+  },
 ]
 
 export default sidebar

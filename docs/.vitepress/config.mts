@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { vitepressDemoPlugin } from 'vitepress-demo-plugin'
 import sidebar from './sidebar'
 
 // https://vitepress.dev/reference/site-config
@@ -16,5 +17,10 @@ export default defineConfig({
     sidebar,
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/chouchouji/monorepo_util' }],
+  },
+  markdown: {
+    config(md) {
+      md.use(vitepressDemoPlugin)
+    },
   },
 })
