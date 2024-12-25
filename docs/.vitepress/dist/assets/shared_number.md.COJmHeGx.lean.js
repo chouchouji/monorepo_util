@@ -1,1 +1,0 @@
-import{_ as s,c as i,o as a,a2 as t}from"./chunks/framework.Rf9G6_fC.js";const g=JSON.parse('{"title":"数字","description":"","frontmatter":{},"headers":[],"relativePath":"shared/number.md","filePath":"shared/number.md"}'),h={name:"shared/number.md"},n=t("",7),e=[n];function l(p,k,r,d,o,c){return a(),i("div",null,e)}const m=s(h,[["render",l]]);export{g as __pageData,m as default};
